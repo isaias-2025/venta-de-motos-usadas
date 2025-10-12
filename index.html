@@ -1,17 +1,572 @@
-<html>
-    <head>
-        <title>venta de motos usadas</title>
-    </head>
-    <body>
-        <center><h1>Venta de motocicletas usadas</h1></center>
-        <table id="tabla1">
-          <tr>
-             <td><a  href="index.html"><input type="button" id="boton" value="Home"></a></td>
-             <td><a  href="productos.html"><input type="button" id="boton" value="producto"></a></td>
-             <td><a  href="contacto.html"><input type="button" id="boton" value="contacto"></a></td>
-          </tr>
-        </table>
-        <p>aqui contamos con todo tipo de motos para ofrecerte todos a un precio accesible y muy comodo</p>
-        <center><h3>lo invitamos a pasar por la pagina de productos donde podra ver todo nuestro catalago</h3></center>
-    </body>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MotoPlaza NIC - Tu destino para motocicletas de calidad en Nicaragua">
+    <title>MotoPlaza NIC - Venta de Motocicletas</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <i class="fas fa-motorcycle"></i>
+                    <span>MotoPlaza<span class="highlight">NIC</span></span>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link active">Inicio</a></li>
+                    <li><a href="#inventory" class="nav-link">Inventario</a></li>
+                    <li><a href="#services" class="nav-link">Servicios</a></li>
+                    <li><a href="nosotros.html" class="nav-link">Nosotros</a></li>
+                    <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <a href="tel:+50512345678" class="phone-btn">
+                        <i class="fas fa-phone"></i>
+                        <span>+505 1234-5678</span>
+                    </a>
+                    <button class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="container">
+                <h1 class="hero-title">Encuentra Tu Moto Perfecta</h1>
+                <p class="hero-subtitle">Las mejores motocicletas nuevas y usadas en Nicaragua</p>
+                <div class="hero-buttons">
+                    <a href="#inventory" class="btn btn-primary">Ver Inventario</a>
+                    <a href="#contact" class="btn btn-secondary">Contáctanos</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <h3>500+</h3>
+                        <p>Motos Vendidas</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>15+</h3>
+                        <p>Años de Experiencia</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>100%</h3>
+                        <p>Satisfacción</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Featured Brands -->
+    <section class="brands">
+        <div class="container">
+            <h2 class="section-title">Marcas Disponibles</h2>
+            <div class="brands-grid">
+                <div class="brand-item">
+                    <i class="fas fa-motorcycle"></i>
+                    <span>Honda</span>
+                </div>
+                <div class="brand-item">
+                    <i class="fas fa-motorcycle"></i>
+                    <span>Yamaha</span>
+                </div>
+                <div class="brand-item">
+                    <i class="fas fa-motorcycle"></i>
+                    <span>Kawasaki</span>
+                </div>
+                <div class="brand-item">
+                    <i class="fas fa-motorcycle"></i>
+                    <span>Suzuki</span>
+                </div>
+                <div class="brand-item">
+                    <i class="fas fa-motorcycle"></i>
+                    <span>Bajaj</span>
+                </div>
+                <div class="brand-item">
+                    <i class="fas fa-motorcycle"></i>
+                    <span>TVS</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Inventory Section -->
+    <section class="inventory" id="inventory">
+        <div class="container">
+            <h2 class="section-title">Nuestro Inventario</h2>
+            <p class="section-subtitle">Explora nuestra selección de motocicletas de alta calidad</p>
+            
+            <!-- Filter Buttons -->
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Todas</button>
+                <button class="filter-btn" data-filter="sport">Deportivas</button>
+                <button class="filter-btn" data-filter="cruiser">Cruiser</button>
+                <button class="filter-btn" data-filter="touring">Touring</button>
+                <button class="filter-btn" data-filter="scooter">Scooter</button>
+            </div>
+
+            <!-- Motorcycle Grid -->
+            <div class="moto-grid">
+                <!-- Moto Card 1 -->
+                <div class="moto-card" data-category="sport">
+                    <div class="moto-image">
+                        <img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?w=500&h=350&fit=crop" alt="Honda CBR 600RR">
+                        <div class="moto-badge">Nuevo</div>
+                    </div>
+                    <div class="moto-info">
+                        <h3>Honda CBR 600RR</h3>
+                        <div class="moto-specs">
+                            <span><i class="fas fa-tachometer-alt"></i> 600cc</span>
+                            <span><i class="fas fa-calendar"></i> 2023</span>
+                            <span><i class="fas fa-road"></i> 0 km</span>
+                        </div>
+                        <div class="moto-price">
+                            <span class="price">$12,500</span>
+                            <span class="price-label">USD</span>
+                        </div>
+                        <a href="#contact" class="btn btn-small">Consultar</a>
+                    </div>
+                </div>
+
+                <!-- Moto Card 2 -->
+                <div class="moto-card" data-category="sport">
+                    <div class="moto-image">
+                        <img src="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?w=500&h=350&fit=crop" alt="Yamaha R6">
+                        <div class="moto-badge featured">Destacado</div>
+                    </div>
+                    <div class="moto-info">
+                        <h3>Yamaha YZF-R6</h3>
+                        <div class="moto-specs">
+                            <span><i class="fas fa-tachometer-alt"></i> 600cc</span>
+                            <span><i class="fas fa-calendar"></i> 2022</span>
+                            <span><i class="fas fa-road"></i> 5,000 km</span>
+                        </div>
+                        <div class="moto-price">
+                            <span class="price">$10,800</span>
+                            <span class="price-label">USD</span>
+                        </div>
+                        <a href="#contact" class="btn btn-small">Consultar</a>
+                    </div>
+                </div>
+
+                <!-- Moto Card 3 -->
+                <div class="moto-card" data-category="cruiser">
+                    <div class="moto-image">
+                        <img src="https://images.unsplash.com/photo-1609630875171-b1321377ee65?w=500&h=350&fit=crop" alt="Harley Davidson">
+                    </div>
+                    <div class="moto-info">
+                        <h3>Harley Davidson Street 750</h3>
+                        <div class="moto-specs">
+                            <span><i class="fas fa-tachometer-alt"></i> 750cc</span>
+                            <span><i class="fas fa-calendar"></i> 2021</span>
+                            <span><i class="fas fa-road"></i> 12,000 km</span>
+                        </div>
+                        <div class="moto-price">
+                            <span class="price">$8,500</span>
+                            <span class="price-label">USD</span>
+                        </div>
+                        <a href="#contact" class="btn btn-small">Consultar</a>
+                    </div>
+                </div>
+
+                <!-- Moto Card 4 -->
+                <div class="moto-card" data-category="touring">
+                    <div class="moto-image">
+                        <img src="https://images.unsplash.com/photo-1591608971362-f08b2a75731a?w=500&h=350&fit=crop" alt="BMW GS">
+                        <div class="moto-badge">Nuevo</div>
+                    </div>
+                    <div class="moto-info">
+                        <h3>BMW F 850 GS</h3>
+                        <div class="moto-specs">
+                            <span><i class="fas fa-tachometer-alt"></i> 850cc</span>
+                            <span><i class="fas fa-calendar"></i> 2023</span>
+                            <span><i class="fas fa-road"></i> 0 km</span>
+                        </div>
+                        <div class="moto-price">
+                            <span class="price">$15,900</span>
+                            <span class="price-label">USD</span>
+                        </div>
+                        <a href="#contact" class="btn btn-small">Consultar</a>
+                    </div>
+                </div>
+
+                <!-- Moto Card 5 -->
+                <div class="moto-card" data-category="sport">
+                    <div class="moto-image">
+                        <img src="https://images.unsplash.com/photo-1599819177795-7a85f2c6c9be?w=500&h=350&fit=crop" alt="Kawasaki Ninja">
+                    </div>
+                    <div class="moto-info">
+                        <h3>Kawasaki Ninja 400</h3>
+                        <div class="moto-specs">
+                            <span><i class="fas fa-tachometer-alt"></i> 400cc</span>
+                            <span><i class="fas fa-calendar"></i> 2022</span>
+                            <span><i class="fas fa-road"></i> 8,500 km</span>
+                        </div>
+                        <div class="moto-price">
+                            <span class="price">$6,200</span>
+                            <span class="price-label">USD</span>
+                        </div>
+                        <a href="#contact" class="btn btn-small">Consultar</a>
+                    </div>
+                </div>
+
+                <!-- Moto Card 6 -->
+                <div class="moto-card" data-category="scooter">
+                    <div class="moto-image">
+                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&h=350&fit=crop" alt="Vespa">
+                        <div class="moto-badge featured">Destacado</div>
+                    </div>
+                    <div class="moto-info">
+                        <h3>Vespa Primavera 150</h3>
+                        <div class="moto-specs">
+                            <span><i class="fas fa-tachometer-alt"></i> 150cc</span>
+                            <span><i class="fas fa-calendar"></i> 2023</span>
+                            <span><i class="fas fa-road"></i> 1,200 km</span>
+                        </div>
+                        <div class="moto-price">
+                            <span class="price">$4,800</span>
+                            <span class="price-label">USD</span>
+                        </div>
+                        <a href="#contact" class="btn btn-small">Consultar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title">Nuestros Servicios</h2>
+            <p class="section-subtitle">Más que solo venta de motocicletas</p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Compra y Venta</h3>
+                    <p>Compramos tu moto usada al mejor precio del mercado y te ayudamos a encontrar tu próxima motocicleta ideal.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Mantenimiento</h3>
+                    <p>Servicio técnico especializado con mecánicos certificados para mantener tu moto en perfectas condiciones.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <h3>Financiamiento</h3>
+                    <p>Planes de financiamiento flexibles con las mejores tasas del mercado. ¡Haz realidad tu sueño hoy!</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Garantía</h3>
+                    <p>Todas nuestras motos incluyen garantía extendida para tu tranquilidad y seguridad.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-file-contract"></i>
+                    </div>
+                    <h3>Trámites Legales</h3>
+                    <p>Te asistimos con todos los trámites de registro, placas y documentación necesaria.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <h3>Entrega a Domicilio</h3>
+                    <p>Servicio de entrega a domicilio en todo Nicaragua. Tu moto llega directamente a tu puerta.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">Sobre Nosotros</h2>
+                    <p class="about-description">
+                        Con más de 15 años de experiencia en el mercado nicaragüense, <strong>MotoPlaza NIC</strong> 
+                        se ha consolidado como el destino preferido para la compra y venta de motocicletas.
+                    </p>
+                    <p class="about-description">
+                        Nos especializamos en ofrecer motocicletas de las mejores marcas, garantizando calidad, 
+                        seguridad y el mejor precio del mercado. Nuestro equipo de expertos está comprometido 
+                        en brindarte una experiencia de compra excepcional.
+                    </p>
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Motos certificadas y revisadas</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Precios competitivos</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Atención personalizada</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Garantía en todas las motos</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?w=600&h=800&fit=crop" alt="Sobre Nosotros">
+                    <div class="about-badge">
+                        <i class="fas fa-award"></i>
+                        <span>15+ Años</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Lo Que Dicen Nuestros Clientes</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Excelente servicio y atención. Encontré la moto perfecta para mí y el proceso fue muy fácil. 
+                        ¡Totalmente recomendado!"
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Carlos Martínez</h4>
+                            <p>Managua, Nicaragua</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "La mejor experiencia comprando una moto. El equipo es muy profesional y me ayudaron 
+                        con todo el proceso de financiamiento."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>María González</h4>
+                            <p>León, Nicaragua</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Compré mi Yamaha R6 aquí y no podría estar más feliz. Gran variedad de motos y 
+                        precios justos. ¡Volveré sin duda!"
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Roberto Pérez</h4>
+                            <p>Granada, Nicaragua</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Contáctanos</h2>
+            <p class="section-subtitle">¿Listo para encontrar tu moto ideal? Estamos aquí para ayudarte</p>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-text">
+                            <h3>Ubicación</h3>
+                            <p>Carretera Norte, Km 5.5<br>Managua, Nicaragua</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="info-text">
+                            <h3>Teléfono</h3>
+                            <p>+505 1234-5678<br>+505 8765-4321</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-text">
+                            <h3>Email</h3>
+                            <p>info@motoplazanic.com<br>ventas@motoplazanic.com</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="info-text">
+                            <h3>Horario</h3>
+                            <p>Lun - Vie: 8:00 AM - 6:00 PM<br>Sábado: 8:00 AM - 4:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Nombre completo" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Teléfono" required>
+                        </div>
+                        <div class="form-group">
+                            <select id="interest" name="interest" required>
+                                <option value="">Estoy interesado en...</option>
+                                <option value="comprar">Comprar una moto</option>
+                                <option value="vender">Vender mi moto</option>
+                                <option value="financiamiento">Financiamiento</option>
+                                <option value="servicio">Servicio técnico</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" placeholder="Mensaje" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-motorcycle"></i>
+                        <span>MotoPlaza<span class="highlight">NIC</span></span>
+                    </div>
+                    <p class="footer-description">
+                        Tu destino confiable para la compra y venta de motocicletas en Nicaragua. 
+                        Calidad, seguridad y el mejor servicio garantizado.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="#inventory">Inventario</a></li>
+                        <li><a href="#services">Servicios</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Servicios</h3>
+                    <ul class="footer-links">
+                        <li><a href="#services">Compra y Venta</a></li>
+                        <li><a href="#services">Financiamiento</a></li>
+                        <li><a href="#services">Mantenimiento</a></li>
+                        <li><a href="#services">Garantía</a></li>
+                        <li><a href="#services">Trámites Legales</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <p>Suscríbete para recibir ofertas especiales y novedades</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Tu email" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 MotoPlaza NIC. Todos los derechos reservados.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Política de Privacidad</a>
+                    <a href="#">Términos y Condiciones</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/50512345678" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="js/script.js"></script>
+</body>
 </html>
