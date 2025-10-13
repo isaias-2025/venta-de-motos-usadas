@@ -1,234 +1,194 @@
-# MotoPlaza NIC - Motorcycle Dealership Website
+# MotoPlaza NIC - Sitio web para concesionario de motocicletas
 
-A modern, responsive website clone for a motorcycle dealership business in Nicaragua.
+Un clon de sitio web moderno y responsivo para un concesionario de motocicletas en Nicaragua.
 
-## 🚀 Features
+## 🚀 Características
 
-- **Responsive Design**: Fully responsive layout that works on all devices (desktop, tablet, mobile)
-- **Modern UI/UX**: Clean and professional design with smooth animations
-- **Interactive Navigation**: Sticky navigation with active link highlighting
-- **Motorcycle Inventory**: Filterable motorcycle catalog with detailed cards
-- **Services Section**: Showcase of all available services
-- **About Section**: Company information and features
-- **Testimonials**: Customer reviews and ratings
-- **Contact Form**: Integrated contact form with WhatsApp integration
-- **Social Media Integration**: Links to social media platforms
-- **Scroll Animations**: Smooth scroll effects and element animations
-- **WhatsApp Float Button**: Quick access to WhatsApp chat
-- **Newsletter Subscription**: Email subscription form in footer
+- **Diseño Responsive**: Diseño totalmente responsivo compatible con todos los dispositivos (computadora, tableta, móvil)
+- **IU/UX Moderna**: Diseño limpio y profesional con animaciones fluidas
+- **Navegación Interactiva**: Navegación fija con enlaces destacados
+- **Inventario de Motos**: Catálogo de motos filtrable con fichas detalladas
+- **Sección de Servicios**: Presentación de todos los servicios disponibles
+- **Sección Acerca de**: Información y características de la empresa
+- **Testimonios**: Opiniones y valoraciones de clientes
+- **Formulario de Contacto**: Formulario de contacto integrado con WhatsApp
+- **Integración con Redes Sociales**: Enlaces a redes sociales
+- **Animaciones de Desplazamiento**: Efectos de desplazamiento fluidos y animaciones de elementos
+- **Botón Flotante de WhatsApp**: Acceso rápido al chat de WhatsApp
+- **Suscripción al Newsletter**: Formulario de suscripción por correo electrónico en el pie de página
 
-## 📁 Project Structure
+## 📁 Estructura del Proyecto
 
 ```
 motoplazanic/
-├── index.html          # Main HTML file
+├── index.html # Archivo HTML principal
 ├── css/
-│   └── styles.css      # All styling and responsive design
+│ └── styles.css # Todos los estilos y diseño adaptable
 ├── js/
-│   └── script.js       # Interactive functionality
-├── images/             # Image assets folder
-└── README.md           # Project documentation
+│ └── script.js # Funcionalidad interactiva
+├── images/ # Carpeta de recursos de imagen
+└── README.md # Documentación del proyecto
 ```
 
-## 🛠️ Technologies Used
+## 🛠️ Tecnologías utilizadas
 
-- **HTML5**: Semantic markup
-- **CSS3**: Modern styling with Flexbox and Grid
-- **JavaScript (ES6+)**: Interactive functionality
-- **Font Awesome 6.4.0**: Icons
-- **Google Fonts (Poppins)**: Typography
-- **Unsplash**: Placeholder images
+- **HTML5**: Marcado semántico
+- **CSS3**: Estilo moderno con Flexbox y cuadrícula
+- **JavaScript (ES6+)**: Funcionalidad interactiva
+- **Font Awesome 6.4.0**: Iconos
+- **Google Fonts (Poppins)**: Tipografía
+- **Unsplash**: Imágenes de marcador de posición
 
-## 🎨 Color Scheme
+## 🎨 Esquema de colores
 
-- Primary Color: `#e74c3c` (Red)
-- Secondary Color: `#2c3e50` (Dark Blue)
-- Accent Color: `#f39c12` (Orange)
-- Background Light: `#ecf0f1`
-- Text Dark: `#2c3e50`
-- Text Light: `#7f8c8d`
+- Color primario: `#e74c3c` (Rojo)
+- Color secundario: `#2c3e50` (Azul oscuro)
+- Color de acento: `#f39c12` (Naranja)
+- Fondo claro: `#ecf0f1`
+- Texto oscuro: `#2c3e50`
+- Texto claro: `#7f8c8d`
 
-## 📱 Sections
+## 📱 Secciones
 
-1. **Navigation Bar**
-   - Logo
-   - Menu links (Home, Inventory, Services, About, Contact)
-   - Phone button
-   - Mobile hamburger menu
+1. **Barra de navegación**
+- Logotipo
+- Enlaces de menú (Inicio, Inventario, Servicios, Acerca de, Contacto)
+- Botón de teléfono
+- Menú hamburguesa móvil
 
-2. **Hero Section**
-   - Eye-catching headline
-   - Call-to-action buttons
-   - Statistics display
-   - Scroll indicator
+2. **Sección principal**
+- Título llamativo
+- Botones de llamada a la acción
+- Visualización de estadísticas
+- Indicador de desplazamiento
 
-3. **Brands Section**
-   - Featured motorcycle brands
-   - Grid layout with icons
+3. **Sección de marcas**
+- Marcas de motocicletas destacadas
+- Diseño de cuadrícula con iconos
 
-4. **Inventory Section**
-   - Filterable motorcycle cards
-   - Categories: All, Sport, Cruiser, Touring, Scooter
-   - Detailed specifications
-   - Price display
-   - Contact buttons
+4. **Sección de inventario**
+- Tarjetas de motocicletas filtrables
+- Categorías: Todas, Deportivas, Cruiser, Touring, Scooter
+- Especificaciones detalladas
+- Visualización de precios
+- Botones de contacto
 
-5. **Services Section**
-   - 6 service cards with icons
-   - Buy/Sell, Maintenance, Financing, Warranty, Legal, Delivery
+5. **Sección de Servicios**
+- 6 tarjetas de servicio con iconos
+- Compra/Venta, Mantenimiento, Financiación, Garantía, Legal, Entrega
 
-6. **About Section**
-   - Company information
-   - Feature highlights
-   - Image with badge
+6. **Sección Acerca de**
+- Información de la empresa
+- Características destacadas
+- Imagen con insignia
 
-7. **Testimonials Section**
-   - Customer reviews
-   - Star ratings
-   - Author information
+7. **Sección de Testimonios**
+- Opiniones de clientes
+- Calificaciones con estrellas
+- Información del autor
 
-8. **Contact Section**
-   - Contact information cards
-   - Contact form with WhatsApp integration
-   - Location, phone, email, hours
+8. **Sección de Contacto**
+- Tarjetas de información de contacto
+- Formulario de contacto con integración de WhatsApp
+- Ubicación, teléfono, correo electrónico, horario
 
-9. **Footer**
-   - Company info and logo
-   - Quick links
-   - Services links
-   - Newsletter subscription
-   - Social media links
-   - Copyright information
+9. **Pie de página**
+- Información y logotipo de la empresa
+- Enlaces rápidos
+- Enlaces de servicios
+- Suscripción al boletín informativo
+- Enlaces a redes sociales
+- Información de derechos de autor
 
-## 🚀 Getting Started
+## 🚀 Primeros pasos
 
-### Prerequisites
+### Requisitos previos
 
-- A modern web browser (Chrome, Firefox, Safari, Edge)
-- No server required - runs directly in browser
+- Un navegador web moderno (Chrome, Firefox, Safari, Edge)
+- No requiere servidor; se ejecuta directamente en el navegador
 
-### Installation
+### Instalación
 
-1. Download or clone the project files
-2. Open `index.html` in your web browser
-3. That's it! The website is ready to use
+1. Descarga o clona los archivos del proyecto
+2. Abre `index.html` en tu navegador
+3. ¡Listo! El sitio web está listo para usar.
 
-### Customization
+### Personalización
 
-#### Update Contact Information
+#### Actualizar información de contacto
 
-Edit the following in `index.html`:
-- Phone numbers: Search for `+505 1234-5678`
-- Email addresses: Search for `info@motoplazanic.com`
-- Location: Update address in contact section
-- WhatsApp number: Update in `js/script.js` (line 186 and 267)
+Editar lo siguiente en `index.html`:
+- Números de teléfono: Buscar `+505 1234-5678`
+- Correos electrónicos: Buscar `info@motoplazanic.com`
+- Ubicación: Actualizar la dirección en la sección de contacto.
+- Número de WhatsApp: Actualizar en `js/script.js` (líneas 186 y 267).
 
-#### Update Colors
+#### Actualizar colores
 
-Edit CSS variables in `css/styles.css`:
+Editar las variables CSS en `css/styles.css`:
 ```css
 :root {
-    --primary-color: #e74c3c;
-    --secondary-color: #2c3e50;
-    --accent-color: #f39c12;
-    /* ... other colors */
+--primary-color: #e74c3c;
+--secondary-color: #2c3e50;
+--accent-color: #f39c12;
+/* ... otros colores */
 }
 ```
 
-#### Add Real Images
+#### Añadir imágenes reales
 
-Replace Unsplash placeholder URLs in `index.html` with your own images:
-- Hero background
-- Motorcycle images
-- About section image
+Reemplaza las URL de marcador de posición de Unsplash en `index.html` con tus propias imágenes:
+- Fondo del héroe
+- Imágenes de motocicletas
+- Imagen de la sección "Acerca de"
 
-#### Modify Motorcycle Inventory
+#### Modificar el inventario de motocicletas
 
-Edit the motorcycle cards in the inventory section:
-- Update titles, prices, specifications
-- Change categories (data-category attribute)
-- Add or remove cards as needed
+Edita las tarjetas de motocicletas en la sección de inventario:
+- Actualizar títulos, precios y especificaciones
+- Cambiar categorías (atributo data-category)
+- Añadir o eliminar tarjetas según sea necesario
 
-## 📱 Responsive Breakpoints
+## 📱 Puntos de interrupción adaptables
 
-- Desktop: 1200px and above
-- Tablet: 768px - 1199px
-- Mobile: Below 768px
+- Escritorio: 1200 px y superior
+- Tableta: 768 px - 1199 px
+- Móvil: Menos de 768 px
 
-## ⚡ Performance Features
+## ⚡ Características de rendimiento
 
-- Lazy loading for images
-- Debounced scroll events
-- Intersection Observer for animations
-- Optimized CSS with minimal reflows
-- Efficient JavaScript event handling
+- Carga diferida de imágenes
+- Eventos de desplazamiento con rebote
+- Observador de intersecciones para animaciones
+- CSS optimizado con reflujos mínimos
+- Gestión eficiente de eventos de JavaScript
 
-## 🔧 Browser Support
+## 🔧 Compatibilidad con navegadores
 
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
-- Mobile browsers (iOS Safari, Chrome Mobile)
+- Chrome (última versión)
+- Firefox (última versión)
+- Safari (última versión)
+- Edge (última versión)
+- Navegadores móviles (iOS Safari, Chrome Mobile)
 
-## 📞 WhatsApp Integration
+## 📞 Integración con WhatsApp
 
-The website includes WhatsApp integration for:
-- Contact form submissions
-- Motorcycle inquiries
-- Float button for quick chat
+El sitio web incluye integración con WhatsApp para:
+- Envío de formularios de contacto
+- Consultas sobre motocicletas
+- Botón flotante para chat rápido
 
-Update the WhatsApp number in `js/script.js`:
+Actualiza el número de WhatsApp en `js/script.js`:
 ```javascript
-const whatsappNumber = '50512345678'; // Replace with your number
+const whatsappNumber = '50512345678'; // Reemplaza con tu número
 ```
 
-## 🎯 Future Enhancements
+## 🎯 Mejoras futuras
 
-Potential features to add:
-- Backend integration for form submissions
-- Database for motorcycle inventory
-- Admin panel for content management
-- Multi-language support
-- Advanced search and filters
-- User accounts and favorites
-- Online payment integration
-- Live chat support
-- Blog section
-- Virtual motorcycle tours
-
-## 📄 License
-
-This project is open source and available for personal and commercial use.
-
-## 👨‍💻 Developer Notes
-
-### Key JavaScript Functions
-
-- `activateNavLink()`: Highlights active navigation link based on scroll position
-- `showNotification()`: Displays success/error notifications
-- `animateCounter()`: Animates number counters
-- `debounce()`: Optimizes scroll event performance
-
-### CSS Architecture
-
-- Mobile-first approach
-- BEM-inspired naming convention
-- Modular sections
-- Reusable utility classes
-- CSS Grid and Flexbox for layouts
-
-## 🤝 Contributing
-
-Feel free to fork this project and customize it for your needs. Suggestions and improvements are welcome!
-
-## 📧 Contact
-
-For questions or support, contact:
-- Email: info@motoplazanic.com
-- Phone: +505 1234-5678
-- WhatsApp: +505 1234-5678
-
----
-
-**Built with ❤️ for MotoPlaza NIC**
+Posibles funciones:
+- Integración con el backend para el envío de formularios
+- Base de datos para el inventario de motocicletas
+- Panel de administración para la gestión de contenido
+- Soporte multilingüe
+- Búsqueda y filtros avanzados
+- Nosotros
