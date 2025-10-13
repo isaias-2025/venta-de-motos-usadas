@@ -1,14 +1,467 @@
-<html>
-    <head>
-        <title>contacto</title>
-    </head>
-    <body>
-        <table id="tabla1">
-          <tr>
-             <td><a  href="index.html"><input type="button" id="boton" value="Home"></a></td>
-             <td><a  href="productos.html"><input type="button" id="boton" value="producto"></a></td>
-             <td><a  href="contacto.html"><input type="button" id="boton" value="contacto"></a></td>
-          </tr>
-          <center><h1>participantes</h1></center>
-    </body>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contáctanos - MotoPlaza NIC - Estamos aquí para ayudarte">
+    <title>Contacto - MotoPlaza NIC</title>
+    <link rel="stylesheet" href="css/contacto.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <i class="fas fa-motorcycle"></i>
+                    <span>MotoPlaza<span class="highlight">NIC</span></span>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li><a href="index.html#inventory" class="nav-link">Inventario</a></li>
+                    <li><a href="index.html#services" class="nav-link">Servicios</a></li>
+                    <li><a href="nosotros.html" class="nav-link">Nosotros</a></li>
+                    <li><a href="contacto.html" class="nav-link active">Contacto</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <a href="tel:+50512345678" class="phone-btn">
+                        <i class="fas fa-phone"></i>
+                        <span>+505 1234-5678</span>
+                    </a>
+                    <button class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="header-overlay"></div>
+        <div class="container">
+            <h1 class="page-title">Contáctanos</h1>
+            <p class="page-subtitle">Estamos aquí para ayudarte a encontrar tu moto ideal</p>
+            <div class="breadcrumb">
+                <a href="index.html"><i class="fas fa-home"></i> Inicio</a>
+                <span>/</span>
+                <span>Contacto</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Info Section -->
+    <section class="contact-info-section">
+        <div class="container">
+            <div class="info-grid">
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="info-content">
+                        <h3>Ubicación</h3>
+                        <p>Carretera Norte, Km 5.5</p>
+                        <p>Managua, Nicaragua</p>
+                        <a href="https://maps.google.com" target="_blank" class="info-link">
+                            Ver en el mapa <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="info-content">
+                        <h3>Teléfonos</h3>
+                        <p><a href="tel:+50512345678">+505 1234-5678</a></p>
+                        <p><a href="tel:+50587654321">+505 8765-4321</a></p>
+                        <a href="tel:+50512345678" class="info-link">
+                            Llamar ahora <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="info-content">
+                        <h3>Email</h3>
+                        <p><a href="mailto:info@motoplazanic.com">info@motoplazanic.com</a></p>
+                        <p><a href="mailto:ventas@motoplazanic.com">ventas@motoplazanic.com</a></p>
+                        <a href="mailto:info@motoplazanic.com" class="info-link">
+                            Enviar email <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="info-content">
+                        <h3>Horario de Atención</h3>
+                        <p><strong>Lunes - Viernes:</strong></p>
+                        <p>8:00 AM - 6:00 PM</p>
+                        <p><strong>Sábado:</strong></p>
+                        <p>8:00 AM - 4:00 PM</p>
+                        <p><strong>Domingo:</strong> Cerrado</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="contact-layout">
+                <div class="form-side">
+                    <h2 class="section-title">Envíanos un Mensaje</h2>
+                    <p class="section-subtitle">Completa el formulario y nos pondremos en contacto contigo lo antes posible</p>
+                    
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">
+                                    <i class="fas fa-user"></i>
+                                    Nombre Completo *
+                                </label>
+                                <input type="text" id="name" name="name" placeholder="Tu nombre completo" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">
+                                    <i class="fas fa-envelope"></i>
+                                    Correo Electrónico *
+                                </label>
+                                <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">
+                                    <i class="fas fa-phone"></i>
+                                    Teléfono *
+                                </label>
+                                <input type="tel" id="phone" name="phone" placeholder="+505 1234-5678" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="interest">
+                                    <i class="fas fa-tag"></i>
+                                    Estoy Interesado En *
+                                </label>
+                                <select id="interest" name="interest" required>
+                                    <option value="">Selecciona una opción</option>
+                                    <option value="comprar">Comprar una moto</option>
+                                    <option value="vender">Vender mi moto</option>
+                                    <option value="financiamiento">Opciones de financiamiento</option>
+                                    <option value="servicio">Servicio técnico</option>
+                                    <option value="repuestos">Repuestos y accesorios</option>
+                                    <option value="otro">Otro</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">
+                                <i class="fas fa-heading"></i>
+                                Asunto
+                            </label>
+                            <input type="text" id="subject" name="subject" placeholder="Asunto del mensaje">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">
+                                <i class="fas fa-comment"></i>
+                                Mensaje *
+                            </label>
+                            <textarea id="message" name="message" rows="6" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <span>Deseo recibir ofertas especiales y novedades por email</span>
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fas fa-paper-plane"></i>
+                            Enviar Mensaje
+                        </button>
+
+                        <p class="form-note">* Campos obligatorios</p>
+                    </form>
+                </div>
+
+                <div class="info-side">
+                    <div class="info-box">
+                        <h3>¿Por Qué Contactarnos?</h3>
+                        <ul class="benefits-list">
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <span>Respuesta rápida en menos de 24 horas</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <span>Asesoría personalizada sin compromiso</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <span>Información detallada sobre nuestras motos</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <span>Opciones de financiamiento flexibles</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <span>Atención profesional y amigable</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="info-box">
+                        <h3>Métodos de Contacto</h3>
+                        <div class="contact-methods">
+                            <a href="https://wa.me/50512345678" class="method-btn whatsapp" target="_blank">
+                                <i class="fab fa-whatsapp"></i>
+                                <span>WhatsApp</span>
+                            </a>
+                            <a href="tel:+50512345678" class="method-btn phone">
+                                <i class="fas fa-phone"></i>
+                                <span>Llamar</span>
+                            </a>
+                            <a href="mailto:info@motoplazanic.com" class="method-btn email">
+                                <i class="fas fa-envelope"></i>
+                                <span>Email</span>
+                            </a>
+                            <a href="https://facebook.com" class="method-btn facebook" target="_blank">
+                                <i class="fab fa-facebook-messenger"></i>
+                                <span>Messenger</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="info-box social-box">
+                        <h3>Síguenos en Redes Sociales</h3>
+                        <div class="social-links-large">
+                            <a href="#" class="social-btn facebook">
+                                <i class="fab fa-facebook-f"></i>
+                                <span>Facebook</span>
+                            </a>
+                            <a href="#" class="social-btn instagram">
+                                <i class="fab fa-instagram"></i>
+                                <span>Instagram</span>
+                            </a>
+                            <a href="#" class="social-btn twitter">
+                                <i class="fab fa-twitter"></i>
+                                <span>Twitter</span>
+                            </a>
+                            <a href="#" class="social-btn youtube">
+                                <i class="fab fa-youtube"></i>
+                                <span>YouTube</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <h2 class="section-title">Encuéntranos</h2>
+            <p class="section-subtitle">Visítanos en nuestra ubicación en Managua</p>
+        </div>
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124422.39861796424!2d-86.35041984999999!3d12.136389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f7155400f0e3a5b%3A0x5e4e8c5c5c5c5c5c!2sManagua%2C%20Nicaragua!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus" 
+                width="100%" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+        <div class="map-info">
+            <div class="container">
+                <div class="map-details">
+                    <div class="map-detail-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Dirección</h4>
+                            <p>Carretera Norte, Km 5.5, Managua, Nicaragua</p>
+                        </div>
+                    </div>
+                    <div class="map-detail-item">
+                        <i class="fas fa-car"></i>
+                        <div>
+                            <h4>Estacionamiento</h4>
+                            <p>Amplio estacionamiento gratuito disponible</p>
+                        </div>
+                    </div>
+                    <div class="map-detail-item">
+                        <i class="fas fa-bus"></i>
+                        <div>
+                            <h4>Transporte Público</h4>
+                            <p>Accesible por rutas 109, 110 y 112</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Preguntas Frecuentes</h2>
+            <p class="section-subtitle">Encuentra respuestas a las preguntas más comunes</p>
+            
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>¿Cuál es el proceso para comprar una moto?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>El proceso es simple: 1) Visítanos o contáctanos, 2) Elige tu moto ideal, 3) Revisamos opciones de financiamiento, 4) Completamos la documentación, 5) ¡Disfruta tu nueva moto!</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>¿Ofrecen financiamiento?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sí, trabajamos con varios bancos y financieras para ofrecerte las mejores opciones de financiamiento con tasas competitivas y plazos flexibles.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>¿Aceptan motos usadas como parte de pago?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>¡Por supuesto! Evaluamos tu moto usada y te ofrecemos el mejor precio del mercado como parte de pago para tu nueva motocicleta.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>¿Las motos incluyen garantía?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Todas nuestras motocicletas incluyen garantía. Las motos nuevas tienen garantía de fábrica y las usadas incluyen nuestra garantía extendida.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>¿Realizan entregas a domicilio?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sí, ofrecemos servicio de entrega a domicilio en todo Nicaragua. Los costos varían según la ubicación.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>¿Puedo hacer una prueba de manejo?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>¡Claro! Agenda una cita con nosotros y podrás probar la motocicleta que te interesa. Solo necesitas traer tu licencia de conducir vigente.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-motorcycle"></i>
+                        <span>MotoPlaza<span class="highlight">NIC</span></span>
+                    </div>
+                    <p class="footer-description">
+                        Tu destino confiable para la compra y venta de motocicletas en Nicaragua. 
+                        Calidad, seguridad y el mejor servicio garantizado.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="index.html#inventory">Inventario</a></li>
+                        <li><a href="index.html#services">Servicios</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Servicios</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html#services">Compra y Venta</a></li>
+                        <li><a href="index.html#services">Financiamiento</a></li>
+                        <li><a href="index.html#services">Mantenimiento</a></li>
+                        <li><a href="index.html#services">Garantía</a></li>
+                        <li><a href="index.html#services">Trámites Legales</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <p>Suscríbete para recibir ofertas especiales y novedades</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Tu email" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 MotoPlaza NIC. Todos los derechos reservados.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Política de Privacidad</a>
+                    <a href="#">Términos y Condiciones</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/50512345678" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="js/contacto.js"></script>
+</body>
 </html>
